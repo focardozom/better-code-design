@@ -1,0 +1,37 @@
+# A Philosophy of Software Design. 
+**John Ousterhout**
+
+## Chapter 1
+
+
+## Chapter 2
+
+0. "Complexity is anything related to the structure of a sofware system that makes it hard to understand and modify the system. 
+
+1. Code can be evaluated in terms of its complexity. 
+
+2. Causes of complexity: dependencies and obscurity.
+
+3. Consequences of complexity:
+    * Change amplification: one change has to be done in several places. 
+    * Cognitive load: you need to consider several things for one change. 
+    * Uknown unknows: it is not obvious what parts need to be changed to make a change or complete a task.
+
+1. Complexity is the result of many small decisions in the code. You should not think that introducing one small dependency is not going to add a lot of complexity to your code, because it does. 
+
+## Chapter 3
+
+There are two ways of writing code:
+    
+1. Tactical: rapid, task oriented
+2. Strategic: takes time (10-20% more). You must think before doing the task. 
+
+* Complexity is incremental
+* Your primary goal should be to produce good code.
+* *Technical debt:* future problems caused by tactical programming. 
+
+## Chapter 4
+
+Modular design is way to deal with complexity. The objective is to make modules as independent as much as possible to reduce dependencies. 
+
+A module is a peace of code that contains an interface and a implementation. Iterface is about what it does. 
