@@ -1,37 +1,45 @@
-# A Philosophy of Software Design. 
-**John Ousterhout**
+# Summary of "A Philosophy of Software Design" by John Ousterhout
 
 ## Chapter 1
 
+Introduction to the philosophy and importance of software design.
 
 ## Chapter 2
 
-0. "Complexity is anything related to the structure of a sofware system that makes it hard to understand and modify the system. 
+1. **Complexity in Software Systems**:
+    - Complexity refers to anything related to the structure of a software system that makes it hard to understand and modify.
 
-1. Code can be evaluated in terms of its complexity. 
+2. **Evaluating Code**:
+    - Code should be evaluated based on its complexity.
 
-2. Causes of complexity: dependencies and obscurity.
+3. **Causes of Complexity**:
+    - **Dependencies**: Relationships between different parts of the code that make changes more complicated.
+    - **Obscurity**: Lack of clarity in how the code functions and how different parts are connected.
 
-3. Consequences of complexity:
-    * Change amplification: one change has to be done in several places. 
-    * Cognitive load: you need to consider several things for one change. 
-    * Uknown unknows: it is not obvious what parts need to be changed to make a change or complete a task.
+4. **Consequences of Complexity**:
+    - **Change Amplification**: A single change requiring modifications in multiple places.
+    - **Cognitive Load**: The mental effort needed to understand and modify the code.
+    - **Unknown Unknowns**: Difficulty in identifying all the parts that need to be changed to implement a new feature or fix a bug.
 
-1. Complexity is the result of many small decisions in the code. You should not think that introducing one small dependency is not going to add a lot of complexity to your code, because it does. 
+5. **Small Decisions Accumulate**:
+    - Complexity results from many small decisions in the code. Even seemingly minor dependencies can significantly increase complexity over time.
 
 ## Chapter 3
 
-There are two ways of writing code:
-    
-1. Tactical: rapid, task oriented
-2. Strategic: takes time (10-20% more). You must think before doing the task. 
+1. **Approaches to Writing Code**:
+    - **Tactical Programming**: Rapid and task-oriented, often resulting in quick solutions but potentially increasing complexity.
+    - **Strategic Programming**: Takes more time (10-20% more) and involves thinking before coding, aiming for long-term code quality.
 
-* Complexity is incremental
-* Your primary goal should be to produce good code.
-* *Technical debt:* future problems caused by tactical programming. 
+2. **Key Principles**:
+    - **Complexity is Incremental**: Small, incremental increases in complexity can lead to significant issues.
+    - **Primary Goal**: Aim to produce good, maintainable code.
+    - **Technical Debt**: Future problems caused by tactical programming and shortcuts that accumulate over time.
 
 ## Chapter 4
 
-Modular design is way to deal with complexity. The objective is to make modules as independent as much as possible to reduce dependencies. 
+1. **Modular Design**:
+    - A module consists of an interface and an implementation. The interface defines what the module does, while the implementation is about how it does it.
+    - Modular design helps manage complexity by reducing dependencies between different parts of the code.
 
-A module is a peace of code that contains an interface and a implementation. Iterface is about what it does. 
+2. **Abstractions**:
+    - Abstractions provide a simplified view of an entity, helping to manage and reduce complexity in software systems.
